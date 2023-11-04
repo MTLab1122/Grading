@@ -13,10 +13,11 @@
         <img src="img.jpeg" alt="">
     </div>
     <div class="container">
-        <h1>Grade Checker</h1>
+        <h1><span class="highlight">Grade Checker</span></h1>
         <form id="gradeForm">
             <label for="percentage">Enter Percentage:</label><br>
-            <input type="number" id="percentage" name="percentage" min="0" max="100" required><br>
+            <input type="number" id="percentage" name="percentage" min="0" max="100" oninput="validity.valid||(value='');"
+                required><br>
             <button type="button" onclick="checkGrade()">Check Grade</button>
         </form>
         <div class="result" id="result"></div>
