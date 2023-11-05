@@ -3,7 +3,7 @@ function checkGrade() {
 
     if (percentage === "") {
         displayResult("Please enter a value.");
-    } else if (percentage >= 0 && percentage <= 100) {
+    } else if (percentage > 0 && percentage <= 100) {
         if (percentage >= 80) {
             displayResult("A+");
         } else if (percentage >= 70) {

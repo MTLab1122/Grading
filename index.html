@@ -15,10 +15,10 @@
     <div class="container">
         <h1><span class="highlight">Grade Checker</span></h1>
         <form id="gradeForm">
-            <label for="percentage">Enter Percentage:</label><br>
+            <label for="percentage"><b>Enter Percentage:</b></label><br>
             <input type="number" id="percentage" name="percentage" min="0" max="100" oninput="validity.valid||(value='');"
                 required><br>
-            <button type="button" onclick="checkGrade()">Check Grade</button>
+            <button type="button" onclick="checkGrade()"><b>Check Grade</b></button>
         </form>
         <div class="result" id="result"></div>
     </div>
